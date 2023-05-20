@@ -1,0 +1,201 @@
+@import "font-face.css";
+@import "fontawesome.css";
+@import "solid.css";
+
+body {
+    direction: rtl;
+    margin: 0;
+    font-family: Vazirmatn;
+    background-color: #151515;
+    color: #fff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+.vertical-padding {
+    padding: 80px 0;
+}
+
+.favorite-list .special {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favorite-list .title-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.favorite-list .title-section .select {
+    border: 1px solid rgba(255, 255, 255, .12);
+    padding: 15px 25px;
+    display: flex;
+    gap: 5px;
+    position: relative;
+    border-radius: 35px;
+    width: 120px
+}
+
+.favorite-list .title-section .select .first {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .12);
+    border-radius: 16px;
+    padding: 2px 16px;
+}
+
+.favorite-list .title-section .select .second {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.favorite-list h2 {
+    font-size: 25px;
+    color: #fff;
+    padding: 12px;
+}
+
+.favorite-list ul li {
+    width: 16.66%;
+    padding: 5px;
+}
+
+.favorite-list ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.favorite-list ul li .info {
+    position: relative;
+}
+
+.favorite-list ul li .info:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    transition: all 2s;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    content: "";
+
+}
+
+.favorite-list ul li:hover .info:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.favorite-list ul li .info.active {
+    border: 2px solid white;
+    transform: scale(1.1);
+    border-radius: 8px;
+}
+
+.filimoBox h2 {
+    font-size: 25px;
+    color: #fff;
+    padding: 12px;
+}
+
+
+.filimoBox ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.filimoBox ul li {
+    width: 33.3%;
+    padding: 10px;
+}
+
+.filimoBox ul li img {
+    width: 100%;
+    height: auto;
+}
+
+.filimoBox ul li .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #000;
+}
+
+.filimoBox ul li .info .play {
+    position: absolute;
+    background: #00000080;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.filimoBox ul li .info .play i {
+    color: #fff;
+}
+
+.filimoBox ul li .info .text {
+    position: absolute;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    border-radius: 20px;
+    padding: 0 8px;
+}
+
+.filimoBox ul li .info img {
+    width: 100%;
+    height: auto;
+}
+
+.filimoBox ul li .info p {
+    font-size: 15px;
+    margin: 3px;
+}
+
+.filimoBox ul li:hover .info {
+    transform: scale(1.1);
+}
+
+.filimoBox ul li:hover .info .play {
+    background: rgba(147, 145, 145, 0.859);
+}

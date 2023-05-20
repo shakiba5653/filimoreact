@@ -1,0 +1,16 @@
+.starsList {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.starsList .starPhoto {
+    border-radius: 50%;
+    width: 170px;
+    height: auto;
+}
+
+.starsList p {
+    text-align: center;
+    font-size: 15px;
+}

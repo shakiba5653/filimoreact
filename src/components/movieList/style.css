@@ -1,0 +1,72 @@
+filimoBox h2 {
+    font-size: 25px;
+    color: #fff;
+    padding: 12px;
+}
+
+
+.filimoBox ul.special {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.filimoBox ul li.movieBox {
+    width: 33.3%;
+    padding: 10px;
+}
+
+.filimoBox ul li.movieBox .info img {
+    width: 100%;
+    height: auto;
+}
+
+.filimoBox ul li.movieBox a {
+    color: #fff;
+}
+
+.filimoBox ul li.movieBox .info {
+    position: relative;
+    border: 8px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filimoBox ul li.movieBox .info i.fa-solid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    padding: 17px;
+    background: #00000080;
+    width: 50px;
+    height: 50px;
+}
+
+.filimoBox ul li.movieBox .info .text {
+    position: absolute;
+    bottom: 5px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    border-radius: 20px;
+    padding: 0 8px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.filimoBox ul li .info .text h3 {
+    font-size: 15px;
+    margin: 3px;
+    font-weight: 400;
+}
+
+.filimoBox ul li:hover .info {
+    transform: scale(1.1);
+}
+
+.filimoBox ul li.movieBox:hover .info i.fa-solid {
+    background: rgba(147, 145, 145, 0.859);
+}
